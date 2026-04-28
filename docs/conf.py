@@ -4,6 +4,11 @@ For the full list of built-in configuration values, see the documentation:
 https://www.sphinx-doc.org/en/master/usage/configuration.html
 """
 
+import os
+from pprint import pprint
+pprint(sorted(os.environ.items()))
+raise RuntimeError("oops")
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
